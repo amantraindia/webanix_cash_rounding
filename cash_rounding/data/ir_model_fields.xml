@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Manual field: required for Apps > Import Module (ZIP), which does not load Python.
+         Name must start with x_ (ir.model.fields constraint for state=manual). -->
+    <record id="field_res_company_x_invoice_cash_rounding_id" model="ir.model.fields">
+        <field name="name">x_invoice_cash_rounding_id</field>
+        <field name="field_description">Default Cash Rounding Method</field>
+        <field name="model_id" ref="base.model_res_company" />
+        <field name="model">res.company</field>
+        <field name="ttype">many2one</field>
+        <field name="relation">account.cash.rounding</field>
+        <field name="state">manual</field>
+    </record>
+</odoo>
