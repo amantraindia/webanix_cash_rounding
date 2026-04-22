@@ -1,5 +1,5 @@
 {
-    'name': 'Cash Rounding Default',
+    'name': 'Cash Rounding Odoo',
     'version': '19.0.1.0.0',
     'summary': 'Default cash rounding in sales and invoices',
     'description': 'Automatically applies cash rounding in orders and invoices.',
