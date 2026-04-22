@@ -7,8 +7,8 @@
     'category': 'Accounting',
     'depends': ['account', 'sale'],
     'data': [
-        'views/res_company_views.xml',
         'data/ir_model_fields.xml',
+        'views/res_company_views.xml',
     ],
     'installable': True,
     'application': False,
