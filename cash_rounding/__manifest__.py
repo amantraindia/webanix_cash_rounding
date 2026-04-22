@@ -1,9 +1,9 @@
 {
     'name': 'Cash Rounding Odoo',
     'version': '19.0.1.0.0',
-    'summary': 'Default cash rounding in sales and invoices',
-    'description': 'Automatically applies cash rounding in orders and invoices.',
-    'author': 'Your Company',
+    'summary': 'Cash Rounding Odoo',
+    'description': 'Cash Rounding Odoo in sales and invoices',
+    'author': 'Webanix Solutions',
     'category': 'Accounting',
     'depends': ['account', 'sale'],
     'data': [
