@@ -7,8 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='currency_id']" position="after">
                 <field
-                    name="x_invoice_cash_rounding_id"
-                    groups="account.group_cash_rounding"
+                    name="invoice_cash_rounding_id"
                     options="{'no_create': True}"
                 />
             </xpath>
