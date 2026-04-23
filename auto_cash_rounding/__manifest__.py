@@ -1,6 +1,6 @@
 {
     'name': 'Automatic Cash Rounding for Odoo',
-    'version': '19.0.1.0.3',
+    'version': '19.0.1.0.4',
     'summary': 'Automatic cash rounding for sales orders and invoices',
     'description': """
 Advanced Cash Rounding for Odoo
