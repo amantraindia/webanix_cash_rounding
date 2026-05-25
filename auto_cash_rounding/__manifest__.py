@@ -1,6 +1,6 @@
 {
     'name': 'Automatic Cash Rounding for Odoo',
-    'version': '19.0.1.0.4',
+    'version': '19.0.1.0.5',
     'summary': 'Automatic cash rounding for sales orders and invoices',
     'description': """
 Advanced Cash Rounding for Odoo
@@ -23,9 +23,12 @@ Easy to configure and works out-of-the-box with Odoo Accounting.
     'website': 'https://webanixsolutions.com',
     'maintainer': 'Webanix Solutions',
     'category': 'Accounting',
-    'depends': ['account', 'sale'],
+    'depends': ['account', 'sale', 'purchase', 'stock'],
     'data': [
         'views/res_company_views.xml',
+        'views/account_move_views.xml',
+        'views/purchase_order_views.xml',
+        'views/stock_picking_views.xml',
     ],
     'images': ['static/description/banner.png'],
     'installable': True,

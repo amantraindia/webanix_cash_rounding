@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_picking_form_auto_cash_rounding" model="ir.ui.view">
+        <field name="name">stock.picking.form.auto.cash.rounding</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='origin']" position="after">
+                <field name="is_cash_rounding_scrap_picking" invisible="1"/>
+                <field
+                    name="cash_rounding_id"
+                    options="{'no_create': True}"
+                    invisible="not is_cash_rounding_scrap_picking"
+                    readonly="state == 'done'"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
